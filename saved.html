@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Data Science Jobs</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="app.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <h1>Data Science Jobs</h1>
+        </header>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="saved.html">Saved Jobs</a></li>
+                <li><a href="insights.html">Insights</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section>
+                <h2>Filter Jobs</h2>
+                <form id="filterForm">
+                    <label for="filterLocation">Location:</label>
+                    <select id="filterLocation">
+                        <option value="">All</option>
+                        <option value="New York">New York</option>
+                        <option value="California">California</option>
+                    </select>
+        
+                    <label for="minSalary">Salary Min:</label>
+                    <input type="number" id="minSalary" placeholder="e.g. 70000">
+            
+                    <label for="jobType">Job Type:</label>
+                    <select id="jobType">
+                        <option value="">All</option>
+                        <option value="full_time">Full Time</option>
+                        <option value="part_time">Part Time</option>
+                        <option value="contract">Contract</option>
+                    </select>
+            
+                    <button type="submit">Apply Filters</button>
+                </form>
+            </section>
+        
+            <section>
+                <h2>Saved Jobs</h2>
+                <div id="savedJobsList"></div>
+            </section>
+        </main>
+
+        <script src="saved.js"></script>     
+    </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Data Science Jobs</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="app.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <h1>Data Science Jobs</h1>
+         </header>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="saved.html">Saved Jobs</a></li>
+                <li><a href="insights.html">Insights</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section>
+                <h2>Average Salaries by Data Role (2025)</h2>
+                <canvas id="salaryByRoleChart" width="800" height="400"></canvas>
+            </section>
+
+            <section>
+                <h2>Top Hiring Companies</h2>
+                <canvas id="topCompaniesChart" width="600" height="300"></canvas>
+            </section>
+
+            <section>
+                <h2>Jobs by Location</h2>
+                <canvas id="locationChart" width="600" height="300"></canvas>
+            </section>
+        </main>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="insights.js"></script>
+    </body>
+
+</html>
